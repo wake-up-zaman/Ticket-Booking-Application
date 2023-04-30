@@ -1,0 +1,191 @@
+.navbarNew{
+    /* height: 100vh; */
+    background-color: #000;
+    /* background-image: url(../../assests/banner.png); */
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navLi{
+    list-style: none;
+}
+
+
+.navA{
+    text-decoration: none;
+    color: #000000;
+    font-size:  1rem;
+}
+
+.navA:hover{
+    color: orange;
+}
+
+
+.navbar2{
+    width: 100%;
+    height: 60px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+
+}
+
+.logo a{
+    font-size: 1.5rem;
+}
+
+.links{
+    display: flex;
+    gap: 2rem;
+}
+
+.toggle-btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.action-btn{
+    background-color: rgb(0, 174, 255);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.action-btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+
+.action-btn:active{
+    scale: 0.95;
+}
+
+.dropdown-tab{
+    z-index: 100;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    display: none;
+
+}
+
+.dropdown-tab li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+
+
+}
+
+.navB{
+    text-decoration: none;
+    color: #020202;
+    font-size:  1rem;
+}
+.action-btn-tab{
+    background-color: rgb(0, 174, 255);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.action-btn-tab:hover{
+    scale: 1.05;
+    color: #fff;
+}
+
+.action-btn-tab:active{
+    scale: 0.95;
+}
+
+.navIcon2{
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 2px;
+    color: #000;
+}
+
+.titleName{
+    list-style-type: none;
+}
+
+
+@media (max-width: 992px){
+    .links,.action-btn{
+        display: none;
+    }
+
+    .toggle-btn{
+        display: block;
+    }
+    .dropdown-tab{
+        display: block;
+    }
+}
+
+@media (max-width: 540px){
+
+    .dropdown-tab{
+        z-index: 100;
+        position: absolute;
+        right: 10px;
+        top: 60px;
+        width: 300px;
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(25px);
+        border-radius: 10px;
+        overflow: hidden;
+        text-decoration: none;
+        display: none;
+    
+    }
+    
+    .dropdown-tab li{
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000000;
+    
+    
+    }
+
+    .links,.action-btn{
+        display: none;
+    }
+
+    .toggle-btn{
+        display: block;
+    }
+    .dropdown-tab{
+        display: block;
+    }
+}
+
